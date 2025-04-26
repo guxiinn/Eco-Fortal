@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eco-Fortal</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f0fdf4;
+      color: #333;
+    }
+    nav {
+      background-color: #4CAF50;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #dcedc8;
+    }
+    header {
+      margin-top: 80px;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    section img {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      border-radius: 12px;
+      margin: 20px;
+    }
+    section div.texto {
+      max-width: 600px;
+      margin: 20px;
+    }
+    h2 {
+      color: #2e7d32;
+      margin-bottom: 20px;
+    }
+    p {
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+    .botao {
+      display: inline-block;
+      padding: 10px 20px;
+      border: 2px solid #4CAF50;
+      color: #4CAF50;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: all 0.3s;
+      font-weight: bold;
+    }
+    .botao:hover {
+      background-color: #4CAF50;
+      color: white;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #4CAF50;
+      color: white;
+      margin-top: 50px;
+    }
+    #topo-btn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 15px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 18px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div><a href="index.html">🌱 Eco-Fortal</a></div>
+  <div>
+    <a href="#quem-somos">Quem Somos</a>
+    <a href="#nosso-objetivo">Objetivo</a>
+    <a href="#colabore">Colabore</a>
+    <a href="contato.html">Contato</a>
+  </div>
+</nav>
+
+<header>
+  <h1>Bem-vindo à Eco-Fortal</h1>
+  <p><b>“Sinalizamos o descaso, promovemos a mudança”</b></p>
+</header>
+
+<section id="quem-somos">
+  <img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9" alt="Natureza">
+  <div class="texto">
+    <h2>Quem Somos?</h2>
+    <p>Somos uma organização dedicada à promoção da melhoria contínua e à preservação dos ambientes públicos, atuando por meio de iniciativas estratégicas de limpeza, conscientização ambiental e práticas de reciclagem. Nosso compromisso é estimular a sustentabilidade, fomentar a responsabilidade coletiva e contribuir de forma efetiva para a construção de um ambiente mais saudável, seguro e agradável para toda a comunidade.</p>
+    <a href="#top" class="botao">Saiba mais</a>
+  </div>
+</section>
+
+<section id="nosso-objetivo">
+  <div class="texto">
+    <h2>Nosso Objetivo</h2>
+    <p>O objetivo da nossa empresa é atuar de forma estratégica na identificação e sinalização de áreas que apresentam baixa manutenção de resíduos e deficiências em saneamento básico...</p>
+    <a href="#top" class="botao">Veja como</a>
+  </div>
+  <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Objetivo Ecológico">
+</section>
+
+<section id="colabore">
+  <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6" alt="Colabore">
+  <div class="texto">
+    <h2>Colabore</h2>
+    <p>Ajude-nos a plantar sementes de mudança! Seja um voluntário, faça uma doação ou compartilhe nossas iniciativas.</p>
+    <a href="#top" class="botao">Junte-se a nós</a>
+  </div>
+</section>
+
+<footer>
+  © 2025 Eco-Fortal - Todos os direitos reservados
+</footer>
+
+<button id="topo-btn" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">↑</button>
+
+<script>
+  const topoBtn = document.getElementById('topo-btn');
+  window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 300) {
+      topoBtn.style.display = 'block';
+    } else {
+      topoBtn.style.display = 'none';
+    }
+  });
+</script>
+
+</body>
+</html>
